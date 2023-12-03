@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //object in literal ways
+       // in js all the data stored in the form of objects or in the object
+        let myObj={
+            id:40,
+            name:"uma shankar",
+            salary:30000,
+            place:"hubli"
+        }
+        console.log(myObj);
+
+        //fetching the value of object
+        console.log(myObj.salary);
+
+        //updating the value of object
+        console.log(myObj.salary=100000);
+        console.log(myObj);
+
+        //adding key and value pair for the existing object 
+        console.log(myObj.number=7259423350);
+        console.log(myObj);
+
+        //deleting an key and value pair from an existing object
+        delete myObj["place"];
+        console.log(myObj);
+
+
+
+
+        //creating object in literal way
+    let myObj1={
+    name:"pratap",
+    age:44,
+    color:"godi banna sadaran mai kattu"
+}
+
+//why primitive is called immutable or object de-referencing
+let num=1222;
+let num1=num;
+num=1223;
+console.log(num1);1222
+console.log(num);//1223
+
+//why non primitive is called mutable or object de-referencing
+let obj122={
+    bottle:"1ltr",
+    color:"purple"
+}
+let obj123=obj122;
+obj122.color="red";
+console.log(obj122);
+console.log(obj123);
+
+                                        
+
+//creating object inside object
+let myObj2={
+    name:"pratap",
+    age:44,
+    color:"godi banna sadaran mai kattu",
+    computer:{
+        ram:"4gb",
+        color:"gray",
+        height:5
+    }
+}
+
+//fetch
+//dot notation
+// console.log(myObj1.computer.color);//gray
+
+
+//array notation
+// comsole.log(myObj1["computer"]["color"]);
+
+//update
+console.log(myObj1.computer.ram="5gb");
+console.log(myObj1);
+
+
+
+//object methods(important)
+//1.assign
+//2.freeze
+//3.key
+//4.value
+//5.entries
+
+//assign object used to collect all the key and value pairs of different object in  a single object
+//or
+//assign object is assigning all the key and value pairs in a single object
+let clgObj={
+    place:"bengaluru",
+    strength:1000
+}
+let sclObj={
+    place:"davangere",
+    strength:2000
+}
+
+let asgnObj=Object.assign([sclObj,clgObj]);
+console.log(asgnObj);
+
+//freeze
+//freeze is use to stop the updating value of an object at some period of time 
+sclObj.place="hubli";
+console.log(sclObj);
+sclObj.place="BK";
+console.log(sclObj);
+
+let freezeObj=Object.freeze(sclObj);
+sclObj.place="uganda"
+console.log(freezeObj);
+
+//key
+let keyObj=Object.keys(sclObj);
+console.log(keyObj);
+
+let valueObj=Object.values(sclObj);
+console.log(valueObj);
+
+//fetching the key and value using for loop
+//for-in loop(fetching the keys of an object)
+for(let key in sclObj)
+{
+    console.log(key);
+}
+
+for(let key in sclObj)
+{
+    console.log(sclObj[key]);
+}
+
+//entries
+//when we want convert object to array we need entries
+let entObj=Object.entries(sclObj);
+conosle.log(entObj);
+
+
+
+let object = {
+    firstName : "sheetal",
+    age: 24,
+    details:function() {
+        let place = "BK";
+        return place;
+
+    },
+};
+console.log(object1);
+console.log(object1.details1()); //undefined
+
+//how to prove var is an global
+var comp = 1000;
+console.log(window.comp);//1000
+console.log(window);
+
+let comp = 1000;
+console.log(window.comp);//undefined
+console.log(window);
+
+const comp = 1000;
+console.log(window.comp);//undefined
+console.log(window);
+
+
+
+let myObj3={
+    things:"chair",
+    sports:function()
+    { },
+};
+console.log(myObj3);
+
+
+
+
+
+
+    </script>
+</body>
+</html>

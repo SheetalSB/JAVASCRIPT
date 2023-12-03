@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //other ways to create an object
+        let myObj=new Object();
+        console.log(myObj);
+        myObj.stdName="sheetal";
+        console.log(myObj);
+        console.log(typeof myObj);
+
+        //math
+        let numIs=100.12;
+        let numOf=222;
+//math doesnot take constructor object
+        let math=Math;
+        console.log(math, typeof math);
+
+        console.log(` the PI value is ${Math.PI}`);
+        console.log(` the man of ${Math.max(numIs,numOf)}`);
+        console.log(`the ceil value is ${Math.ceil(40.1)}`);
+        console.log(`the floor value is ${Math.floor(50.5)}`);
+
+        console.log(`the random value is${Math.random()}`);
+
+        //generting the random number(11='a'.....etc)
+        // let randomNum = Math.ceil(Math.random()*1000).toString(16);
+        // alert(randomNum);
+
+        console.log(`the min value is ${(math.cbrt(125))}`);
+        console.log(`the sqrt value is ${math.SQRT1_2}`);
+        console.log(`the sqrt value is ${math.SQRT2}`);
+        console.log(`the power value is ${(math.pow(3,2))}`);
+        console.log(`the power value is ${(math.round(5,5))}`);
+
+    </script>
+</body>
+</html>

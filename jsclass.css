@@ -1,0 +1,37 @@
+/* 
+.wheel {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #ccc;
+  animation: spin 2s infinite linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+#circle1 {
+  width: 200px;
+  height: 200px;
+  
+  border: 20px double black;
+  border radius
+  margin: 10px;
+  background-color: chartreuse;
+  animation: spin 2s infinite linear;
+}
+@keyframes circle1{
+  0%{
+      height: 50vh;
+      width: 40vh;
+      background-size: cover;
+      position: relative;  
+        transform: rotate(360deg);
+  }
+}

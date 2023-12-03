@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+        height: 200px;
+        width: 200px;
+        background-color: yellow;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+        #grandparent{
+            height: 400px;
+        width: 400px;
+        background-color: rgb(24, 188, 24);
+        border: 1px red 1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+        #child{
+            height: 100px;
+        width: 100px;
+        background-color: rgb(136, 18, 88);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div id="demo">i am targeted</div> -->
+
+    <div id="grandparent">
+        <div id="parent">
+            <div id="child">
+
+            </div>
+        </div>
+    </div>
+    
+    <script src="Eventpropogation.js"></script>
+</body>
+</html>

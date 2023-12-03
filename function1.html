@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let arrowFun=(a,b)=>{
+            return a+b;
+
+        }
+        console.log(arrowFun(10,20))
+
+
+
+        //IIFE
+        let exp=function()
+        {
+            console.log("guys please come to the class early")
+        }
+        console.log(exp());
+
+       // 1.put the function inside the expression called parenthesis
+    //    ( function()
+    //     {
+    //     console.log("hello")
+    //     })
+    //     ()
+
+
+
+        //use of IIFE
+        //the variable declared inside the life wont polute the outside things
+        //it wont pollute the global variable means the variables declared inside the life is totally different from the variables declared outside the life
+        //we use life for the data privacy
+
+        // var variable="your name"
+        // function demo(name, day)
+        // {
+        //     console.log("this is first one" + name+"is" + day);
+        // }
+        // demo("variable", 21)
+
+        // var variable="my name";
+        // function test(name, day)
+        // {
+        //     console.log("this is second" + name +"is" + day);
+        // }
+        // test("variable", 21)
+
+        //how to use life for multiple functions
+        //just use expression semicolon after invoking
+        (function()
+        {
+         console.log("good morning");
+        })
+        ();
+
+        (function()
+        {
+            console.log("good evening");
+        })
+        ();
+
+        (function()
+        {
+            console.log("good night");
+        })
+        ()
+    </script>
+</body>
+</html>

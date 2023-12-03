@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        // function fetchApi()
+        // {
+        //     let promise= fetch(
+        //         "https://www.disify.com/api/email/your@example.com"
+        //     );
+        //     console.log(promise);
+        //     let promise1=promise.then(function (data){
+        //         console.log(data);
+        //         return data.json();
+        //     });
+        //     promise1.then((data1)=>{
+        //         console.log(data1);
+        //     });
+        // }
+        // fetchApi();
+
+
+        fetch("https://www.disify.com/api/email/your@example.com")
+            .then((x) => x.json())
+            .then((y) => console.log(y))
+            .catch((error) => {
+                console.log("can't fetch");
+            });
+
+
+
+
+
+    </script>
+</body>
+</html>

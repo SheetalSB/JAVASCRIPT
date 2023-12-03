@@ -1,0 +1,24 @@
+article{
+    height: 300px;
+    width: 300px;
+    background-color: deeppink;
+    
+    border-radius: 50%;
+    border-top: 20px solid red;
+    border-right:20px solid blue;
+    border-bottom: 20px solid green;
+    border-left: 20px solid yellow;
+    transform: rotate(360);
+    
+    animation-name: abcd;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+    
+}
+@keyframes abcd{
+100%{
+transform:rotate(360deg);
+}
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       // function demo()
+        //{
+        //    return new promise((resolve, reject)=>{
+        //        resolve("hello")
+        //    })
+       // }
+       // console.log(demo())
+
+
+       // async funcion test()
+        //{
+        //    return "hello"
+       // }
+       // console.log(test());
+
+
+        async function msg()
+        {
+            let a=await new promise((resolve,reject)=>{
+                setTimeout(()=>{
+                resolve("hello")
+                },2000);
+            })
+        
+        let b=await new promise((resolve, reject)=>{
+            setTimeout(()=>{
+                resolve("world")
+                },2000);
+            })
+        console.log(`yes, ${a} ${b}`)
+    }
+
+
+    function c()
+    {
+        msg()
+        console.log("monday");
+        console.log("tuesday");
+    }
+    c()
+    </script>
+</body>
+</html>
+
+// fetch a data using async and awit
